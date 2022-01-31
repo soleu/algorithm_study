@@ -21,3 +21,14 @@ for i in range(inCnt):
         else:
             pl = pc+1
     print(result)
+
+    ##집합 자료형을 통한 포함 여부 확인
+# from sys import stdin,stdout
+# preCnt = stdin.readline()
+# preN = set(stdin.readline().split())
+# inCnt = stdin.readline()
+# inN = set(stdin.readline().split())
+#
+# for l in inN:
+#     stdout.write('1\n') if l in preN else stdout.write('0\n')
+#     #set 내장 함수를 통해 중복 여부 확인. in의 요소를 순회하면서 포함되면 1, 아니면 0
