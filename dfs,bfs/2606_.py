@@ -27,3 +27,23 @@ def bfs(v):
 
 bfs(1)  # 맨처음 거 넣기
 print(sum(visited)-1) #1번 컴퓨터 제외
+
+##DFS
+# n = int(input())
+# m = int(input())
+# graph = [[0]*(n+1) for _ in range(n+1)]
+# for _ in range(m):
+#     a,b = map(int,input().split())
+#     graph[a][b] = graph[b][a] = 1
+#
+# visited = [0]*(n+1)
+#
+# def dfs(v):
+#     visited[v] = 1
+#     for i in range(n+1):
+#         if graph[i][v] == 1 and visited[i] == 0:
+#             dfs(i) #재귀 사용
+# dfs(1)
+#
+# print(sum(visited)-1)
+
