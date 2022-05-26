@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="18e80fac-56ea-4be4-978a-25a6625d3876" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../codeUp100/1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/10.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/11.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/12.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/13.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/14.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/15.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/16.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/17.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/18.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/19.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/20.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/21.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/22.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/23.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/24.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/25.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/26.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/27.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/28.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/29.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/30.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeUp100/9.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dfs,bfs/1697.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dfs,bfs/2606_.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dfs,bfs/2644.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dfs,bfs/7576.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="29hEIMMOuLufajfJaqHdWfLmAlh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="18e80fac-56ea-4be4-978a-25a6625d3876" name="Changes" comment="" />
+      <created>1653556836716</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653556836716</updated>
+      <workItem from="1653556837906" duration="52000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
