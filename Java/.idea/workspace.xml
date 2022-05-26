@@ -2,56 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91ad3d54-f73e-44b7-ada0-f6258fe928bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/N1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/N2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/N3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../array/1036.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../array/10815.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../array/14915.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../array/1978.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../binary_search/10816.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../binary_search/1654.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../binary_search/1920.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/10.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/11.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/12.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/13.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/14.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/15.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/16.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/17.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/18.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/19.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/20.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/21.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/22.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/23.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/24.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/25.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/26.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/27.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/28.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/29.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/30.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/4.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/5.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/6.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/7.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/8.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codeUp100/9.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dfs,bfs/1697.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dfs,bfs/2606_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dfs,bfs/2644.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dfs,bfs/7576.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../greedy/1026.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../greedy/11047.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../greedy/11399.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../greedy/1541.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../greedy/2839.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../implement/2750.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/N1.java" beforeDir="false" afterPath="$PROJECT_DIR$/N1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/N2.java" beforeDir="false" afterPath="$PROJECT_DIR$/N2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/N3.java" beforeDir="false" afterPath="$PROJECT_DIR$/N3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,10 +36,13 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -128,10 +87,22 @@
       <updated>1653556907158</updated>
       <workItem from="1653556908209" duration="1166000" />
       <workItem from="1653558105504" duration="2291000" />
+      <workItem from="1653561018322" duration="120000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
