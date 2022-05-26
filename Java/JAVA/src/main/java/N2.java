@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class N2 {
     public String solution(String str) {
         String answer = "";
         for (char x : str.toCharArray()) {
@@ -14,7 +14,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main m = new Main();
+        N2 m = new N2();
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         System.out.println(m.solution(str));

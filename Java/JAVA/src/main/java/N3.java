@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class N3 {
     public String solution(String str) {
         String answer = "";
         String[] arr = str.split(" ");
@@ -11,7 +11,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main m = new Main();
+        N3 m = new N3();
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
         System.out.println(m.solution(str));
