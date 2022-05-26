@@ -6,7 +6,7 @@
 
 import java.util.Scanner;
 
-public class Main {
+public class reverseCertainChar {
     public String solution(String str) {
         String answer = "";
         char[] chr = str.toCharArray();
@@ -30,7 +30,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main m = new Main();
+        reverseCertainChar m = new reverseCertainChar();
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         System.out.println(m.solution(str));
