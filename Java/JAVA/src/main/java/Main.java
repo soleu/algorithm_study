@@ -1,31 +1,31 @@
-//a#b!GE*T@S
-// string : array 없이 붙여서 저장 : String.valueOf(str)
-// 특정 문자 바꾸기
-// toCharArray -> 양끝에서 이진탐색 느낌으로
-// 특정문자만 뒤집는다 -> 왼쪽이든 오른쪽이든 해당 문자만 넘기고, 대칭 신경 X
+// 가장 짧은 문자거리
+// 왼쪽에서부터 거리 : int p를 입력값보다 크게 넣음, 해당 문자와 같다면 0, 아니라면 +1씩 증가
+// 오른쪽에서부터 거리 : indexOf를 사용 / for문 역순으로
+
 
 import java.util.Scanner;
 
 public class Main {
-    public String solution(String str) {
-        String answer = "";
-        char[] chr = str.toCharArray();
-        int lt = 0;
-        int rt = chr.length - 1;
-        while (lt < rt) {
-            if (String.valueOf(chr[lt]).matches("[^a-zA-Z0-9\\s]")) {
-                lt++;
-            } else if (String.valueOf(chr[rt]).matches("[^a-zA-Z0-9\\s]")) {
-                rt--;
+    public int[] solution(String str, char c) {
+        int[] answer = new int[str.length()];
+        int p = 1000;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == c) {
+                p = 0;
+                answer[i] = p;
             } else {
-                char tmp = chr[lt];
-                chr[lt] = chr[rt];
-                chr[rt] = tmp;
-                lt++;
-                rt--;
+                p++;
+                answer[i] = p;
             }
         }
-        answer = String.valueOf(chr);
+        for (int i = str.length() - 1; i >= 0; i--) {
+            if (str.charAt(i) == c) {
+                p = 0; //어차피 왼쪽에서 같은 경우는 처리해줬기 때문
+            } else {
+                p++;
+                answer[i] = Math.min(answer[i], p);
+            }
+        }
         return answer;
     }
 
@@ -33,6 +33,9 @@ public class Main {
         Main m = new Main();
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
-        System.out.println(m.solution(str));
+        char c = sc.next().charAt(0);
+        for (int x : m.solution(str, c)) {
+            System.out.print(x + " ");
+        }
     }
 }
