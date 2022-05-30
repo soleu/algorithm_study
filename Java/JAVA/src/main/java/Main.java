@@ -1,30 +1,18 @@
-// 가장 짧은 문자거리
-// 왼쪽에서부터 거리 : int p를 입력값보다 크게 넣음, 해당 문자와 같다면 0, 아니라면 +1씩 증가
-// 오른쪽에서부터 거리 : indexOf를 사용 / for문 역순으로
-
+// 문자열 압축
+//2진수 -> 10진수 변환 Integer.valueOf(string, 2);
+//10진수 -> 2진수 변환 Integer.toBinaryString(int);
+//아스키코드 : 문자 - getNumericValue, 십진법 - (int)
+//개수만큼 자르기 : for 개수, str=str.subString(num)으로 시작 위치를 수정함
 
 import java.util.Scanner;
 
 public class Main {
-    public int[] solution(String str, char c) {
-        int[] answer = new int[str.length()];
-        int p = 1000;
-        for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == c) {
-                p = 0;
-                answer[i] = p;
-            } else {
-                p++;
-                answer[i] = p;
-            }
-        }
-        for (int i = str.length() - 1; i >= 0; i--) {
-            if (str.charAt(i) == c) {
-                p = 0; //어차피 왼쪽에서 같은 경우는 처리해줬기 때문
-            } else {
-                p++;
-                answer[i] = Math.min(answer[i], p);
-            }
+    public String solution(int num, String str) {
+        String answer = "";
+        for (int i = 0; i < num; i++) {
+            String temp = str.substring(0, 7).replace('*', '0').replace('#', '1'); // 이부분에서 에러가 계속 발생함.
+            answer += (char) Integer.parseInt(temp, 2);
+            str = str.substring(7);
         }
         return answer;
     }
@@ -32,10 +20,10 @@ public class Main {
     public static void main(String[] args) {
         Main m = new Main();
         Scanner sc = new Scanner(System.in);
+        String answer = "";
+        int num = sc.nextInt();
         String str = sc.next();
-        char c = sc.next().charAt(0);
-        for (int x : m.solution(str, c)) {
-            System.out.print(x + " ");
-        }
+        answer = m.solution(num, str); // 이부분에서 에러가 계속 발생함.
+        System.out.println(answer);
     }
 }

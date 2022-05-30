@@ -1,7 +1,7 @@
 // 중복 문자 제거
 // - 이중 포문 / indexOf 사용 가능
 // indexOf :검색된 문자열이 '첫번째'로 나타나는 위치 index를 리턴
-// indexOf와 같지 않다면 저장을 안한다.
+// indexOf와 같지 않다면 저장을 안한다. (맨 처음만 저장하게 하는 법 : indexOf 사용)
 
 import java.util.Scanner;
 
