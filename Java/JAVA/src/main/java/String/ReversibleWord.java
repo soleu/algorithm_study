@@ -1,4 +1,4 @@
-// 회문 문자
+package String;// 회문 문자
 //추가 ) StringBuilder.reverse.toString 으로 리버스가 같은지를 확인하는 방법도 있다
 // 이때, str.equalsIgnoreCase를 사용하면 반복문을 바로 나갈 수 있다.
 

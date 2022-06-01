@@ -1,4 +1,4 @@
-//a#b!GE*T@S
+package String;//a#b!GE*T@S
 // string : array 없이 붙여서 저장 : String.valueOf(str)
 // 특정 문자 바꾸기
 // toCharArray -> 양끝에서 이진탐색 느낌으로

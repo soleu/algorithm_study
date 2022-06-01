@@ -1,4 +1,4 @@
-// 문자열 압축
+package String;// 문자열 압축
 //2진수 -> 10진수 변환 Integer.valueOf(string, 2);
 //10진수 -> 2진수 변환 Integer.toBinaryString(int);
 //아스키코드 : 문자 - getNumericValue, 십진법 - (int)
@@ -6,7 +6,8 @@
 
 import java.util.Scanner;
 
-public class Main {
+public class Password {
+
     public String solution(int num, String str) {
         String answer = "";
         for (int i = 0; i < num; i++) {
@@ -18,7 +19,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main m = new Main();
+        Password m = new Password();
         Scanner sc = new Scanner(System.in);
         String answer = "";
         int num = sc.nextInt();

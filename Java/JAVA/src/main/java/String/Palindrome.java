@@ -1,3 +1,5 @@
+package String;
+
 import java.util.Scanner;
 
 // 유효한 팰린드롬
@@ -5,7 +7,6 @@ import java.util.Scanner;
 //[안에 ^을 쓰면 부정]
 // upperCase를 먼저 붙여서 정규식을 줄임
 
-import java.util.Scanner;
 
 public class Palindrome {
     public String solution(String str) {
