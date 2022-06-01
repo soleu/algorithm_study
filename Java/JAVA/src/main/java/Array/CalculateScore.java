@@ -1,5 +1,5 @@
 package Array;
-
+//점수계산
 import java.util.Scanner;
 
 public class CalculateScore {

@@ -5,31 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37847616-e7a6-4ff2-bf81-4553e36f73f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/JAVA/src/main/java/Array/BigNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA/src/main/java/Array/CalculateScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA/src/main/java/Array/Decimal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA/src/main/java/Array/Fibonacci.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA/src/main/java/Array/ReverseDecimal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA/src/main/java/Array/RockScissorPaper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA/src/main/java/Array/TallStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA/src/main/java/String/Password.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA/src/main/java/ComposeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/main/java/String/ComposeString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA/src/main/java/DeleteDuplicateChar.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/main/java/String/DeleteDuplicateChar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/main/java/Array/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA/src/main/java/N1.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/main/java/String/N1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA/src/main/java/N2.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/main/java/String/N2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA/src/main/java/N3.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/main/java/String/N3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA/src/main/java/OnlyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/main/java/String/OnlyNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA/src/main/java/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/main/java/String/Palindrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA/src/main/java/ReversibleWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/main/java/String/ReversibleWord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA/src/main/java/reverseCertainChar.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/main/java/String/reverseCertainChar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA/src/main/java/reverseWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/main/java/String/reverseWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/src/main/java/Array/CalculateScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/main/java/Array/CalculateScore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +70,7 @@
       <recent name="$PROJECT_DIR$/JAVA/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CalculateScore">
+  <component name="RunManager" selected="Application.Mentoring">
     <configuration name="CalculateScore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Array.CalculateScore" />
       <module name="Java.JAVA.main" />
@@ -101,8 +84,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Decimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.Decimal" />
+    <configuration name="ComputeRank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.ComputeRank" />
       <module name="Java.JAVA.main" />
       <extension name="coverage">
         <pattern>
@@ -114,8 +97,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.Fibonacci" />
+    <configuration name="MaxSumGrid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.MaxSumGrid" />
       <module name="Java.JAVA.main" />
       <extension name="coverage">
         <pattern>
@@ -127,8 +110,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseDecimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.ReverseDecimal" />
+    <configuration name="Mentoring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.Mentoring" />
       <module name="Java.JAVA.main" />
       <extension name="coverage">
         <pattern>
@@ -140,8 +123,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RockScissorPaper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.RockScissorPaper" />
+    <configuration name="Peak" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.Peak" />
       <module name="Java.JAVA.main" />
       <extension name="coverage">
         <pattern>
@@ -155,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Mentoring" />
+        <item itemvalue="Application.Peak" />
+        <item itemvalue="Application.MaxSumGrid" />
+        <item itemvalue="Application.ComputeRank" />
         <item itemvalue="Application.CalculateScore" />
-        <item itemvalue="Application.ReverseDecimal" />
-        <item itemvalue="Application.Decimal" />
-        <item itemvalue="Application.Fibonacci" />
-        <item itemvalue="Application.RockScissorPaper" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +155,7 @@
       <option name="presentableId" value="Default" />
       <updated>1653561270980</updated>
       <workItem from="1653561272161" duration="14962000" />
-      <workItem from="1653843200332" duration="27508000" />
+      <workItem from="1653843200332" duration="35223000" />
     </task>
     <servers />
   </component>
