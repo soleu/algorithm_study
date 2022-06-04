@@ -1,16 +1,16 @@
 package Array;
 // 격자판 최대합
+
 import java.util.Scanner;
 
 public class MaxSumGrid {
     public int solution(int num, int[][] arr) {
-        int answer = 0;
+        int answer;
         int max = 0;
-        int tempDiag1 = 0;
-        int tempDiag2 = 0;
+        int tempDiag1 = 0, tempDiag2 = 0;
+        int tempRow, tempCol;
         for (int i = 0; i < num; i++) {
-            int tempRow = 0;
-            int tempCol = 0;
+            tempRow = tempCol = 0;
             tempDiag1 += arr[i][i];
             tempDiag2 += arr[i][num - i - 1];
             for (int j = 0; j < num; j++) {
@@ -21,7 +21,7 @@ public class MaxSumGrid {
             if (tempCol > max) max = tempCol;
         }
         int diag = Math.max(tempDiag1, tempDiag2);
-        answer =Math.max(diag, max);
+        answer = Math.max(diag, max);
 
         return answer;
     }
