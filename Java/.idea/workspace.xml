@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37847616-e7a6-4ff2-bf81-4553e36f73f1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/JAVA/src/main/java/TwoPointer/CombineArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVA/src/main/java/TwoPointer/CommonElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVA/src/main/java/TwoPointer/MaximumOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA/src/main/java/Array/ComputeRank.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/main/java/Array/ComputeRank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA/src/main/java/Array/MaxSumGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/main/java/Array/MaxSumGrid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA/src/main/java/Array/Mentoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/main/java/Array/Mentoring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA/src/main/java/Array/Peak.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/main/java/Array/Peak.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA/src/main/java/Array/TemporaryClassLeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/main/java/Array/TemporaryClassLeader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,13 +71,13 @@
       <recent name="$PROJECT_DIR$/JAVA/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Mentoring">
-    <configuration name="ComputeRank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.ComputeRank" />
+  <component name="RunManager" selected="Application.CommonElement">
+    <configuration name="CombineArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TwoPointer.CombineArrays" />
       <module name="Java.JAVA.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Array.*" />
+          <option name="PATTERN" value="TwoPointer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxSumGrid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.MaxSumGrid" />
+    <configuration name="CommonElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TwoPointer.CommonElement" />
       <module name="Java.JAVA.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Array.*" />
+          <option name="PATTERN" value="TwoPointer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CommonElement" />
+        <item itemvalue="Application.CombineArrays" />
         <item itemvalue="Application.TemporaryClassLeader" />
         <item itemvalue="Application.Mentoring" />
         <item itemvalue="Application.Peak" />
-        <item itemvalue="Application.MaxSumGrid" />
-        <item itemvalue="Application.ComputeRank" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +157,8 @@
       <updated>1653561270980</updated>
       <workItem from="1653561272161" duration="14962000" />
       <workItem from="1653843200332" duration="35652000" />
-      <workItem from="1654228728391" duration="9144000" />
+      <workItem from="1654228728391" duration="9710000" />
+      <workItem from="1654788842453" duration="3910000" />
     </task>
     <servers />
   </component>
