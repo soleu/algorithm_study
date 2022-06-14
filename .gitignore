@@ -26,6 +26,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+Java/.gradle/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -140,3 +141,5 @@ cython_debug/
 
 
 Java/.gradle/
+
+Java/.idea/workspace.xml
