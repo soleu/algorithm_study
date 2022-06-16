@@ -16,29 +16,20 @@ public class AllAnagram {
             map2.put(x, map2.getOrDefault(x, 0) + 1);
             map1.put(y, map1.getOrDefault(y, 0) + 1);
         }
-        boolean flag = true;
-        for (char x : map2.keySet()) {
-            if (map1.get(x) != map2.get(x)) flag = false;
-        }
-        if (flag) answer++;
 
-        for (
-                int i = 0; i < str1.length() - str2.length(); i++) {
+        if (map1.equals(map2)) answer++;
+
+        for (int i = 0; i < str1.length() - str2.length(); i++) {
             char y = str1.charAt(i);
             char endChar = str1.charAt(rp);
-            flag = true;
 
-            //뒤에꺼 빼고
             map1.put(y, map1.getOrDefault(y, 0) - 1);
             if (map1.get(y) == 0) map1.remove(str1.charAt(i));
-            //앞에서 넣기
+
             map1.put(endChar, map1.getOrDefault(endChar, 0) + 1);
             rp++;
 
-            for (char x : map2.keySet()) {
-                if (map1.get(x) != map2.get(x)) flag = false;
-            }
-            if (flag) answer++;
+            if (map1.equals(map2)) answer++;
         }
         return answer;
     }
