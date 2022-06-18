@@ -6,20 +6,18 @@ import java.util.Stack;
 public class Crane {
     public int solution(int n, int[][] arr, int m, int[] moves) {
         int answer = 0;
-        int[] pos = new int[n];
 
         Stack<Integer> stack = new Stack<>();
         for (int move : moves) {
-            for (int i = 0; i < n; i++) {
-                for (int j = 0; j < n; j++) {
-                    if (arr[j][i] != 0 && i == move - 1) {
-                        if (!stack.empty() && stack.peek() == arr[j][i]) {
-                            answer += 2;
-                            stack.pop();
-                        } else stack.push(arr[j][i]);
-                        arr[j][i] = 0;
-                        break;
-                    }
+            int i = move - 1;
+            for (int j = 0; j < n; j++) {
+                if (arr[j][i] != 0) {
+                    if (!stack.empty() && stack.peek() == arr[j][i]) {
+                        answer += 2;
+                        stack.pop();
+                    } else stack.push(arr[j][i]);
+                    arr[j][i] = 0;
+                    break;
                 }
             }
         }
