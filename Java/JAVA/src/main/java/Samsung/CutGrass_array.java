@@ -1,8 +1,12 @@
 package Samsung;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Scanner;
 
 public class CutGrass_array {
     public long solution(int n, int m, int d, int[][] place, int[] oil) {
@@ -38,26 +42,32 @@ public class CutGrass_array {
         return answer;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         CutGrass_array main = new CutGrass_array();
-        Scanner scanner = new Scanner(System.in);
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        File file = new File("/Users/pine_lee/Desktop/PROJECT/Algorithm/Java/JAVA/src/main/java/Samsung/sample.txt");
+        FileReader fr = new FileReader(file);
+        BufferedReader br_f = new BufferedReader(fr);
 
-        int T = scanner.nextInt();
+        int T = Integer.parseInt(br_f.readLine());
         int n, m, d;
         long[] answers = new long[T];
         for (int t = 0; t < T; t++) {
-            n = scanner.nextInt();
-            m = scanner.nextInt();
-            d = scanner.nextInt();
+            String[] token = br_f.readLine().split(" ");
+            n = Integer.parseInt(token[0]);
+            m = Integer.parseInt(token[1]);
+            d = Integer.parseInt(token[2]);
             int[][] place = new int[n][m];
             int[] oil = new int[d];
             for (int i = 0; i < n; i++) {
-                for (int j = 0; j < m; j++) {
-                    place[i][j] = scanner.nextInt();
+                String[] token1 = br_f.readLine().split(" ");
+                for (int j = 0; j < token1.length; j++) {
+                    place[i][j] = Integer.parseInt(token1[j]);
                 }
             }
-            for (int i = 0; i < d; i++) {
-                oil[i] = scanner.nextInt();
+            String[] token2 = br_f.readLine().split(" ");
+            for (int i = 0; i < token2.length; i++) {
+                oil[i] = Integer.parseInt(token2[i]);
             }
             answers[t] = main.solution(n, m, d, place, oil);
         }
@@ -66,3 +76,4 @@ public class CutGrass_array {
         }
     }
 }
+
