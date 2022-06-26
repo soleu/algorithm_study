@@ -1,17 +1,40 @@
 package Samsung;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.Collections;
 
 public class CutGrass_array {
+    private static void quickSort(int[] arr, int start, int end) {
+        int part = partition(arr, start, end);
+        if (start < part - 1) quickSort(arr, start, part - 1);
+        if (end > part) quickSort(arr, part, end);
+    }
+
+    private static int partition(int[] arr, int start, int end) {
+        int pivot = arr[(start + end) / 2];
+        while (start <= end) {
+            while (arr[start] > pivot) start++;
+            while (arr[end] < pivot) end--;
+            if (start <= end) {
+                swap(arr, start, end);
+                start++;
+                end--;
+            }
+        }
+        return start;
+    }
+
+    private static void swap(int[] arr, int start, int end) {
+        int tmp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = tmp;
+        return;
+    }
+
     public long solution(int n, int m, int d, int[][] place, int[] oil) {
         long answer = 0;
-        Integer[] place_arr = new Integer[n * m];
+        int[] place_arr = new int[n * m];
 
         int cnt = 0;
         //일차원 배열 넣기
@@ -22,7 +45,7 @@ public class CutGrass_array {
             }
         }
 
-        Arrays.sort(place_arr, Collections.reverseOrder());
+        quickSort(place_arr, 0, place_arr.length - 1);
         int idx = 0;
         for (int i = 0; i < d; i++) {
             //일차마다 1cm씩 자라기
@@ -44,28 +67,25 @@ public class CutGrass_array {
 
     public static void main(String[] args) throws IOException {
         CutGrass_array main = new CutGrass_array();
-//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        File file = new File("/Users/pine_lee/Desktop/PROJECT/Algorithm/Java/JAVA/src/main/java/Samsung/sample.txt");
-        FileReader fr = new FileReader(file);
-        BufferedReader br_f = new BufferedReader(fr);
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        int T = Integer.parseInt(br_f.readLine());
+        int T = Integer.parseInt(br.readLine());
         int n, m, d;
         long[] answers = new long[T];
         for (int t = 0; t < T; t++) {
-            String[] token = br_f.readLine().split(" ");
+            String[] token = br.readLine().split(" ");
             n = Integer.parseInt(token[0]);
             m = Integer.parseInt(token[1]);
             d = Integer.parseInt(token[2]);
             int[][] place = new int[n][m];
             int[] oil = new int[d];
             for (int i = 0; i < n; i++) {
-                String[] token1 = br_f.readLine().split(" ");
+                String[] token1 = br.readLine().split(" ");
                 for (int j = 0; j < token1.length; j++) {
                     place[i][j] = Integer.parseInt(token1[j]);
                 }
             }
-            String[] token2 = br_f.readLine().split(" ");
+            String[] token2 = br.readLine().split(" ");
             for (int i = 0; i < token2.length; i++) {
                 oil[i] = Integer.parseInt(token2[i]);
             }
