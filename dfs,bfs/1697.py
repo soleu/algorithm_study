@@ -6,7 +6,6 @@ from collections import deque
 
 input = sys.stdin.readline()
 
-
 # bfs
 def bfs():
     # queue 생성
