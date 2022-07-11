@@ -1,76 +1,83 @@
 package Samsung.SWAcademy;
 
 import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
-import java.io.FileInputStream;
 
 import static java.lang.Math.max;
 
-public class water {
-    /*
-       사용하는 클래스명이 Solution 이어야 하므로, 가급적 Solution.java 를 사용할 것을 권장합니다.
-       이러한 상황에서도 동일하게 java Solution 명령으로 프로그램을 수행해볼 수 있습니다.
-     */
-//    class Solution
-//    {
-    class Pos {
-        int x;
-        int y;
-        int cost;
-
-        public Pos(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
-    }
-
+//public class water {
+class Solution {
     static int[] dirX = {-1, 1, 0, 0};
     static int[] dirY = {0, 0, -1, 1};
+    static int[][] map;
+    static boolean[][] visited;
+    static int n;
+    static int answer = 0;
 
-    public int bfs(int[][] arr, int cnt, int n) {
-        boolean[][] visited = new boolean[n][n];
-        LinkedList<Pos> queue = new LinkedList<>();
+    public void bfs(int x, int y, int level) {
+        Queue<int[]> queue = new LinkedList<>();
+        queue.add(new int[]{x, y});
+        visited[x][y] = true;
 
-        queue.add(new Pos(0,0)); // 이 부분 cnt 로 수정
-        visited[0][0]= true;
+        while (!queue.isEmpty()) {
+            int[] data = queue.poll();
+            int curX = data[0];
+            int curY = data[1];
 
-        while(!queue.isEmpty()){
-            Pos curPos = queue.poll();
+            for (int i = 0; i < 4; i++) {
+                int nx = curX + dirX[i];
+                int ny = curY + dirY[i];
 
-            for(int i=0;i<4;i++){
-                int nx= curPos.x+dirX[i];
-                int ny= curPos.y+dirY[i];
-                
+                if (nx >= 0 && ny >= 0 && nx < n && ny < n) {
+                    if (!visited[nx][ny] && map[nx][ny] > level) {
+                        visited[nx][ny] = true;
+                        queue.add(new int[]{nx, ny});
+                    }
+                }
             }
-        }
-
-        return 0;
-    }
-
-    public void solution(int[][] arr, int n) {
-        int answer = 1;
-        int cnt = 1;
-        while (cnt == n) {
-            max(1, bfs(arr, cnt, n));
-            cnt++;
         }
     }
 
     public static void main(String args[]) throws Exception {
-        water main = new water();
+        Solution main = new Solution();
         Scanner sc = new Scanner(System.in);
         int T;
+
         T = sc.nextInt();
+        int[] answers = new int[T];
 
         for (int test_case = 1; test_case <= T; test_case++) {
-            int n = sc.nextInt();
-            int[][] arr = new int[n][n];
+            n = sc.nextInt();
+            map = new int[n][n];
+
+            int max = 0;
+            int count = 0;
+
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < n; j++) {
-                    arr[i][j] = sc.nextInt();
+                    map[i][j] = sc.nextInt();
+                    max = Math.max(max, map[i][j]);
                 }
             }
-            main.solution(arr, n);
+
+            for (int level = 0; level < max; level++) {
+                visited = new boolean[n][n];
+                count = 0;
+                for (int i = 0; i < n; i++) {
+                    for (int j = 0; j < n; j++) {
+                        if (map[i][j] > level && !visited[i][j]) {
+                            main.bfs(i, j, level);
+                            count++;
+                        }
+                    }
+                }
+                answer = Math.max(answer, count);
+            }
+            answers[test_case - 1] = answer;
+        }
+        for (int i = 0; i < answers.length; i++) {
+            System.out.println("#" + (i + 1) + " " + answers[i]);
         }
     }
 }
