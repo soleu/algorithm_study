@@ -53,96 +53,60 @@ class UserSolution {
         return null != findStudent ? findStudent.mId : 0;
     }
 
-    private Student getLowestStudent(Student newStudent) {
-        Student topStudent = null;
-        for (int i = 0; i < StudentList.size(); i++) {
-            Student student = StudentList.get(i);
-            if (Arrays.equals(student.mGender, newStudent.mGender) && student.mGrade == newStudent.mGrade) {
-                if (topStudent == null) topStudent = student;
-                if (student.mScore < topStudent.mScore) topStudent = student;
-                else if (student.mScore == topStudent.mScore) {
-                    if (student.mId < topStudent.mId) topStudent = student;
-                }
-            }
-        }
-        return topStudent;
-//        Student findStudent = StudentList.stream()
-//                .filter(student1 -> Arrays.equals(student1.mGender, student.mGender) && student1.mGrade == student.mGrade)
-//                .reduce((student1, student2) -> {
-//                            if (student1.mScore < student2.mScore) return student1;
-//                            else if (student1.mScore == student2.mScore) {
-//                                if (student1.mId < student2.mId) return student1;
-//                                return student2;
-//                            }
-//                            return student2;
-//                        }
-//                ).orElse(null);
-//        return findStudent;
+    private Student getLowestStudent(Student student) {
+        Student findStudent = StudentList.stream()
+                .filter(student1 -> Arrays.equals(student1.mGender, student.mGender) && student1.mGrade == student.mGrade)
+                .reduce((student1, student2) -> {
+                            if (student1.mScore < student2.mScore) return student1;
+                            else if (student1.mScore == student2.mScore) {
+                                if (student1.mId < student2.mId) return student1;
+                                return student2;
+                            }
+                            return student2;
+                        }
+                ).orElse(null);
+        return findStudent;
     }
 
     private Student getHighestStudent(int mGrade, char[] mGender, Student newStudent) {
-        Student topStudent = newStudent;
-        for (Student student : StudentList) {
-            if (Arrays.equals(student.mGender, mGender) && student.mGrade == mGrade) {
-                if (student.mScore > topStudent.mScore) topStudent = student;
-                else if (student.mScore == topStudent.mScore) {
-                    if (student.mId > topStudent.mId) topStudent = student;
-                }
-            }
-        }
-        return topStudent;
-//        Student student = StudentList.stream()
-//                .filter(student1 -> Arrays.equals(student1.mGender, mGender) && student1.mGrade == mGrade)
-//                .reduce(newStudent, (student1, student2) -> {
-//                    if (student1.mScore > student2.mScore) return student1;
-//                    else if (student1.mScore == student2.mScore) {
-//                        if (student1.mId > student2.mId) return student1;
-//                        return student2;
-//                    }
-//                    return student2;
-//                });
+        Student student = StudentList.stream()
+                .filter(student1 -> Arrays.equals(student1.mGender, mGender) && student1.mGrade == mGrade)
+                .reduce(newStudent, (student1, student2) -> {
+                    if (student1.mScore > student2.mScore) return student1;
+                    else if (student1.mScore == student2.mScore) {
+                        if (student1.mId > student2.mId) return student1;
+                        return student2;
+                    }
+                    return student2;
+                });
+
+        return student;
     }
 
     private Student getSetStudent(int[] mGrade, char[][] mGender, int mScore) {
-        Student topStudent = null;
-        for (int i = 0; i < StudentList.size(); i++) {
-            Student student = StudentList.get(i);
-            if (student.mScore >= mScore)
-                for (char[] gender : mGender) {
-                    for (int grade : mGrade) {
-                        if (Arrays.equals(student.mGender, gender) && student.mGrade == grade) {
-                            if (topStudent == null) topStudent = student;
-                            else if (student.mScore < topStudent.mScore) topStudent = student;
-                            else if (student.mScore == topStudent.mScore) {
-                                if (student.mId < topStudent.mId) topStudent = student;
-                            }
-                        }
-                    }
-                }
-        }
-        return topStudent;
 
-//        Student findStudent = StudentList.stream()
-//                .filter(student1 ->
-//                        {
-//                            for (char[] gender : mGender) {
-//                                if (Arrays.equals(gender, student1.mGender)) {
-//                                    for (int grade : mGrade) {
-//                                        if (grade == student1.mGrade && student1.mScore >= mScore) return true;
-//                                    }
-//                                }
-//                            }
-//                            return false;
-//                        }
-//                )
-//                .reduce((student1, student2) -> {
-//                    if (student1.mScore < student2.mScore) return student1;
-//                    else if (student1.mScore == student2.mScore) {
-//                        if (student1.mId < student2.mId) return student1;
-//                        return student2;
-//                    }
-//                    return student2;
-//                }).orElse(null);
-//                    return findStudent;
+        Student findStudent = StudentList.stream()
+                .filter(student1 ->
+                        {
+                            if (student1.mScore >= mScore)
+                                for (int grade : mGrade) {
+                                    if (grade == student1.mGrade) {
+                                        for (char[] gender : mGender) {
+                                            if (Arrays.equals(gender, student1.mGender)) return true;
+                                        }
+                                    }
+                                }
+                            return false;
+                        }
+                )
+                .reduce((student1, student2) -> {
+                    if (student1.mScore < student2.mScore) return student1;
+                    else if (student1.mScore == student2.mScore) {
+                        if (student1.mId < student2.mId) return student1;
+                        return student2;
+                    }
+                    return student2;
+                }).orElse(null);
+        return findStudent;
     }
 }
